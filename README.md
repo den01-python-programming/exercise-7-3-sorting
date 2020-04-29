@@ -2,7 +2,7 @@
 
 ## Finding the smallest value
 
-Create in the class `MainProgram` a class method `smallest` that takes an integer array as a parameter. It should return the smallest value in the array.
+Create in the main program a class method `smallest` that takes an integer array as a parameter. It should return the smallest value in the array.
 
 Here is the structure of the method:
 
@@ -15,7 +15,7 @@ The next example illustrates how the method works:
 
 ```python
 numbers = [6, 5, 8, 7, 11]
-print("Smallest: " + str(MainProgram.smallest(numbers)))
+print("Smallest: " + str(smallest(numbers)))
 ```
 
 ```plaintext
@@ -24,7 +24,7 @@ Smallest: 5
 
 ## Index of the smallest value
 
-Create a method called `index_of_smallest` in the class MainProgram. It should return the index of the smallest number in the array that it receives as a parameter.
+Create a method called `index_of_smallest` in the class  It should return the index of the smallest number in the array that it receives as a parameter.
 
 Here is the structure of the method:
 
@@ -38,7 +38,7 @@ The following code illustrates how to use the method:
 ```python
 # indices:      0  1  2  3  4
 numbers = [6, 5, 8, 7, 11]
-print("Index of the smallest number: " + str(MainProgram.index_of_smallest(numbers)))
+print("Index of the smallest number: " + str(index_of_smallest(numbers)))
 ```
 
 ```plaintext
@@ -63,9 +63,9 @@ The following code illustrates how the method words:
 ```python
 # indices:       0  1  2  3   4
 numbers = [-1, 6, 9, 8, 12]
-print(MainProgram.index_of_smallest_from(numbers, 0))
-print(MainProgram.index_of_smallest_from(numbers, 1))
-print(MainProgram.index_of_smallest_from(numbers, 2))
+print(index_of_smallest_from(numbers, 0))
+print(index_of_smallest_from(numbers, 1))
+print(index_of_smallest_from(numbers, 2))
 ```
 
 ```plaintext
@@ -79,7 +79,7 @@ In this example the first method call searches for the index of the smallest num
 
 ## Swapping numbers
 
-Create a class method `swap` in the class MainProgram. It receives as its parameters an array and two indices inside it. The method swaps the numbers in these indices with each other.
+Create a class method `swap` in the class  It receives as its parameters an array and two indices inside it. The method swaps the numbers in these indices with each other.
 
 The basic structure of the method is:
 
@@ -93,13 +93,13 @@ The following illustrates how to use the method. To print an array we take use o
 ```python
 numbers = [3, 2, 5, 4, 8]
 
-print(Arrays.__str__(numbers))
+print(numbers)
 
-MainProgram.swap(numbers, 1, 0)
-print(Arrays.__str__(numbers))
+swap(numbers, 1, 0)
+print(numbers)
 
-MainProgram.swap(numbers, 0, 3)
-print(Arrays.__str__(numbers))
+swap(numbers, 0, 3)
+print(numbers)
 ```
 
 ```plaintext
@@ -127,7 +127,7 @@ In other words:
 - Examine the array starting from index 2. Swap the following two numbers with each other: the number at index 2, and the smallest number in the array starting from index 2.
 - Etc.
 
-Implement a class method called `sort` based on the idea above in the class MainProgram. It should include a loop that goes through the indices of the array. Certainly the method `index_of_smallest_from` and `swap` will come in handy. Additionally, print the contents of the arrya before sorting and after every iteration of the loop to ensure that the algorithm works as you expect it to.
+Implement a class method called `sort` based on the idea above in the class  It should include a loop that goes through the indices of the array. Certainly the method `index_of_smallest_from` and `swap` will come in handy. Additionally, print the contents of the arrya before sorting and after every iteration of the loop to ensure that the algorithm works as you expect it to.
 
 The definition of the method looks like this:
 
@@ -140,7 +140,7 @@ Use at least the following example to test how the method functions:
 
 ```python
 numbers = [8, 3, 7, 9, 1, 2, 4]
-MainProgram.sort(numbers)
+sort(numbers)
 ```
 
 The output of the program should look like the print below. Observe that you must print the contents of the array after each swap!
