@@ -2,12 +2,12 @@
 
 ## Finding the smallest value
 
-Create in the main program a class method `smallest` that takes an integer array as a parameter. It should return the smallest value in the array.
+Create in the main program a function `smallest` that takes an integer array as a parameter. It should return the smallest value in the array.
 
 Here is the structure of the method:
 
 ```python
-def smallest(self,array):
+def smallest(array):
     # write your code here
 ```
 
@@ -24,12 +24,12 @@ Smallest: 5
 
 ## Index of the smallest value
 
-Create a method called `index_of_smallest` in the class  It should return the index of the smallest number in the array that it receives as a parameter.
+Create a function called `index_of_smallest` in the class  It should return the index of the smallest number in the array that it receives as a parameter.
 
 Here is the structure of the method:
 
 ```python
-def index_of_smallest(self, array):
+def index_of_smallest(array):
     # write your code here
 ```
 
@@ -54,7 +54,7 @@ Create in the class MainProgram a class method called `index_of_smallest_from`. 
 The structure of the method is the following:
 
 ```python
-def index_of_smallest_from(self, table, start_index):
+def index_of_smallest_from(table, start_index):
     # write your code here
 ```
 
@@ -84,7 +84,7 @@ Create a class method `swap` in the class  It receives as its parameters an arra
 The basic structure of the method is:
 
 ```python
-def swap(self, array, index1, index2):
+def swap(array, index1, index2):
     # write your code here
 ```
 
@@ -127,12 +127,12 @@ In other words:
 - Examine the array starting from index 2. Swap the following two numbers with each other: the number at index 2, and the smallest number in the array starting from index 2.
 - Etc.
 
-Implement a class method called `sort` based on the idea above in the class  It should include a loop that goes through the indices of the array. Certainly the method `index_of_smallest_from` and `swap` will come in handy. Additionally, print the contents of the arrya before sorting and after every iteration of the loop to ensure that the algorithm works as you expect it to.
+Implement a class method called `sort_numbers` based on the idea above in the class  It should include a loop that goes through the indices of the array. Certainly the method `index_of_smallest_from` and `swap` will come in handy. Additionally, print the contents of the arrya before sorting and after every iteration of the loop to ensure that the algorithm works as you expect it to.
 
 The definition of the method looks like this:
 
 ```python
-def sort(self, array):
+def sort_numbers(array):
 
 ```
 
@@ -140,19 +140,13 @@ Use at least the following example to test how the method functions:
 
 ```python
 numbers = [8, 3, 7, 9, 1, 2, 4]
-sort(numbers)
+sort_numbers(numbers)
 ```
 
-The output of the program should look like the print below. Observe that you must print the contents of the array after each swap!
+The output of the program should look like the print below.
 
 ```plaintext
-[8, 3, 7, 9, 1, 2, 4]
-[1, 3, 7, 9, 8, 2, 4]
-[1, 2, 7, 9, 8, 3, 4]
-[1, 2, 3, 9, 8, 7, 4]
-[1, 2, 3, 4, 8, 7, 9]
-[1, 2, 3, 4, 7, 8, 9]
 [1, 2, 3, 4, 7, 8, 9]
 ```
 
-Mark how the array becomes sorted little by little starting from the beginning and advancing towards the end of the array.
+Notice how the array becomes sorted little by little starting from the beginning and advancing towards the end of the array by printing each line of the swap!
